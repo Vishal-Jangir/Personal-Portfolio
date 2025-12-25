@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2 class="logo">Portfolio</h2>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <h1>Hello, I'm <span>Vishal</span></h1>
+  <p>Beginner Frontend Developer</p>
+
+  <div class="btn">
+    <button onclick="scrollToSection()">View My Work</button>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a beginner frontend developer skilled in HTML, CSS, and JavaScript.
+    I enjoy building responsive and interactive websites.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-box">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Responsive Design</span>
+    <span>Git & GitHub</span>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Responsive portfolio using HTML, CSS & JS.</p>
+    </div>
+    <div class="project-card">
+      <h3>Todo List</h3>
+      <p>Simple todo app with add & delete functionality.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" />
+    <input type="email" id="email" placeholder="Your Email" />
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+    <p id="error"></p>
+  </form>
+</section>
+
+
+<footer>
+  <p>© 2025 Vishal | Frontend Developer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
